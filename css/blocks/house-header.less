@@ -1,0 +1,24 @@
+// main: ../style.less
+.house-header{
+	width: 100%;
+}
+.house-header__logo-wrapper{
+	background: @textColor;
+	height: 55px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+.house-header__logo{
+	margin: 0px;
+	font-weight: 400;
+	font-size: 24px;
+	color: @accent;
+	font-family: @font;
+	text-align: center;
+}
+@media (min-width: 767px) {
+	.house-header__logo-wrapper{
+		display: none;
+	}
+}
