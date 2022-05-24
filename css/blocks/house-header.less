@@ -1,6 +1,6 @@
 // main: ../style.less
 .house-header{
-	width: 100%;
+	box-shadow: 0px 1px 1px rgba(143, 143, 143, 0.25);
 }
 .house-header__logo-wrapper{
 	background: @textColor;
@@ -9,7 +9,7 @@
 	align-items: center;
   justify-content: center;
 }
-.house-header__logo{
+.house-header__logo-tel{
 	margin: 0px;
 	font-weight: 400;
 	font-size: 24px;
@@ -17,8 +17,17 @@
 	font-family: @font;
 	text-align: center;
 }
+.house-header__logo-desktop{
+	width: 170px;
+	height: 47px;
+}
 @media (min-width: 767px) {
 	.house-header__logo-wrapper{
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+	.house-header__logo-desktop{
 		display: none;
 	}
 }
