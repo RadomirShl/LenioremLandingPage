@@ -19,15 +19,15 @@
 						<path stroke="#233D4D" stroke-linecap="round" stroke-width="5" d="M2.5 2.5h38M2.5 17.5h38M2.5 32.5h38"/>
 					</svg>
 				</div>
-			<nav class="mein__body">
-				<ul class="mein__list">
-					<li class="mein__item mein__list--first"><a class="mein__a" href="">Главная</a></li>
-					<li class="mein__item"><a class="mein__a" href="">О нас</a></li>
-					<li class="mein__item"><a class="mein__a" href="">Занятея</a></li>
-					<li class="mein__item"><a class="mein__a" href="">Блог</a></li>
-					<li class="mein__item"><a class="mein__a" href="">Страницы</a></li>
-					<li class="mein__item"><a class="mein__a" href="">Контакты</a></li>
-					<li class="mein__item"><a class="mein__a" href="">Войти</a></li>
+			<nav class="nav nav--phone">
+				<ul class="nav__list nav__list--phone">
+					<li class="nav__item nav__list--first"><a class="nav__a" href="">Главная</a></li>
+					<li class="nav__item"><a class="nav__a" href="">О нас</a></li>
+					<li class="nav__item"><a class="nav__a" href="">Занятея</a></li>
+					<li class="nav__item"><a class="nav__a" href="">Блог</a></li>
+					<li class="nav__item"><a class="nav__a" href="">Страницы</a></li>
+					<li class="nav__item"><a class="nav__a" href="">Контакты</a></li>
+					<li class="nav__item"><a class="nav__a" href="">Войти</a></li>
 				</ul>
 			</nav>
 			<a class="mein__title" href="">Главная</a>
@@ -37,7 +37,7 @@
 	<main class="house-main">
 		<section class="about-us">
 			<div class="about-us__wrapper">
-				<h2 class="title--big"><span class="title__emphasis--big">Освежи</span> Тело И Душу</h2>
+				<h2 class="title title--big"><span class="title__emphasis title__emphasis--big">Освежи</span> Тело И Душу</h2>
 				<p class="text">Встретьтесь с собой, где вы находитесь в равновесии внимательности, в тадасане намеренно. Намасте вдыхает, выдох расширяет преднамеренное раскрытие Бикрам преднамеренное. Глубже промойте объятия заботы о себе из зоны комфорта.</p>
 				<a class="button" href=""><div class="button__text--ful">Узнать больше</div></a>
 			</div>
@@ -52,7 +52,7 @@
 			</div>
 			<img class="join__img"	src="img\photo\Foto2.png" alt="Девушка мидетирует в зале">
 		</section>
-		<section class="background-animation">
+		<section class="peculiarity__background">
 			<div class="peculiarity center">
 				<div class="peculiarity__wrapper--title">
 					<h2 class="title"><span class="title__emphasis">Наши особенности</span> Что сделало нас особенными</h2>
@@ -73,57 +73,104 @@
 				</div>
 			</div>
 		</section>
-		<section class="courses">
+		<section class="courses center">
 			<h2 class="title"><span class="title__emphasis">Упражняться</span> Домашние и выездные занятия</h2>
-			<div class="courses-card">
-				<p class="title title--small">Meditation Certification Course</p>
-				<img class="courses-card__img" alt="" src="/">
-				<img class="courses-card__star" alt="" src="/">
-				<p class="courses-card__price">Free</p>
-				<a class="courses-card__buy">Приобрести</a>
+			<div class="courses__wrapp">
+				<div class="card">
+					<img class="card__img" alt="" src="img\photo\well1.jpg">
+					<img class="card__star" alt="" src="img\svg\star.svg">
+					<p class="card__title title title--small">Meditation Certification Course</p>
+					<div class="messenger">
+						<p class="card__price">Free</p>
+						<a class="card__buy">Приобрести</a>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card__img" alt="" src="img\photo\well2.jpg">
+					<img class="card__star" alt="" src="img\svg\star.svg">
+					<p class="card__title title title--small">Meditation Certification Course</p>
+					<div class="messenger">
+						<p class="card__price">Free</p>
+						<a class="card__buy">Приобрести</a>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card__img" alt="" src="img\photo\well3.jpg">
+					<img class="card__star" alt="" src="img\svg\star.svg">
+					<p class="card__title title title--small">Meditation Certification Course</p>
+					<div class="messenger">
+						<p class="card__price">Free</p>
+						<a class="card__buy">Приобрести</a>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="trainer">
-			<h2 class="title"><span class="title__emphasis">Лутшие</span> Наши тренери</h2>
-			<div class="trainer-card">
-				<p class="trainer-card__name">Рин Тосака</p>
-				<p class="trainer-card__speciality">Мастер консентрации</p>
-				<ul class="trainer-card__messenger-wrapper">
-					<li><img class="trainer-card__messenger" alt="" src="/"></li>
-					<li><img class="trainer-card__messenger" alt="" src="/"></li>
-					<li><img class="trainer-card__messenger" alt="" src="/"></li>
-					<li><img class="trainer-card__messenger" alt="" src="/"></li>
-				</ul>
+		<section class="trainer peculiarity__background">
+			<h2 class="title title--center"><span class="title__emphasis">Лутшие</span> Наши тренери</h2>
+			<div class="trainer__wrapper center">
+				<div class="card">
+					<img class="card__img" src="img\photo\trainer1.png" alt="Мулатка медетирует на коврике на йоге.">
+					<p class="card__neme">Рин Тосака</p>
+					<p class="card__speciality">Мастер консентрации</p>
+					<ul class="messenger messenger--messenger">
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MFacebook.svg"></li>
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MTelegram.svg"></li>
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MTwitter.svg"></li>
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MInstagram.svg"></li>
+					</ul>
+				</div>
+				<div class="card">
+					<img class="card__img" src="img\photo\trainer1.png" alt="Мулатка медетирует на коврике на йоге.">
+					<p class="card__neme">Рин Тосака</p>
+					<p class="card__speciality">Мастер консентрации</p>
+					<ul class="messenger messenger--messenger">
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MFacebook.svg"></li>
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MTelegram.svg"></li>
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MTwitter.svg"></li>
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MInstagram.svg"></li>
+					</ul>
+				</div>
+				<div class="card">
+					<img class="card__img" src="img\photo\trainer1.png" alt="Мулатка медетирует на коврике на йоге.">
+					<p class="card__neme">Рин Тосака</p>
+					<p class="card__speciality">Мастер консентрации</p>
+					<ul class="messenger messenger--messenger">
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MFacebook.svg"></li>
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MTelegram.svg"></li>
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MTwitter.svg"></li>
+						<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MInstagram.svg"></li>
+					</ul>
+				</div>
 			</div>
 		</section>
-		<section class="watch-me">
-			<h2 class="title"><span class="title__emphasis">Безграничное обучение</span> Смотрите наш трененги</h2>
-			<img class="watch-me__img" alt="" src="/">
-			<p class="text">Вдохните богиня намасте мудра бандха. Мудра омоложения уджайи вдох ката сана обновление медитация в движении из вашей зоны комфорта отшлифованная тадасана. Дыхание огня, вдох, хатха-йога, осознанность.</p>
-			<a class="button" href=""><div class="button__text--polyium">Будь с нами</div></a>
+		<section class="join center">
+			<div class="join__wrapper">
+				<h2 class="title"><span class="title__emphasis">Безграничное обучение</span> Смотрите наш трененги</h2>
+				<p class="text">Вдохните богиня намасте мудра бандха. Мудра омоложения уджайи вдох ката сана обновление медитация в движении из вашей зоны комфорта отшлифованная тадасана. Дыхание огня, вдох, хатха-йога, осознанность.</p>
+				<a class="button" href=""><div class="button__text--polyium">Будь с нами</div></a>
+			</div>
+			<img class="join__img" alt="" src="img\photo\slide02.jpg">
 		</section>
 	</main>
  	<footer class="house-footer">
- 		<section>
- 			<img class="trainer-card__messenger" alt="" src="/">
- 			<h2 class="house-footer__title">Ми в соцсетях</h2>
- 			<ul class="trainer-card__messenger-wrapper">
-				<li><img class="trainer-card__messenger" alt="" src="/"></li>
-				<li><img class="trainer-card__messenger" alt="" src="/"></li>
-				<li><img class="trainer-card__messenger" alt="" src="/"></li>
-				<li><img class="trainer-card__messenger" alt="" src="/"></li>
-			</ul>
-			<nav class="mein-nav house-footer--nav">
-				<ul class="mein-nav__list site-list house-footer--nav">
-					<li class="site-list__item"><a href="">Главная</a></li>
-					<li class="site-list__item"><a href="">О нас</a></li>
-					<li class="site-list__item"><a href="">Занятея</a></li>
-					<li class="site-list__item"><a href="">Блог</a></li>
-					<li class="site-list__item"><a href="">Страницы</a></li>
-					<li class="site-list__item"><a href="">Контакты</a></li>
+			<img class="house-footer__img" alt="" src="img\svg\Login2.svg">
+			<nav class="nav">
+				<ul class="nav__list site-list">
+					<li class="nav__item"><a class="nav__a nav__a--footer" href="">Главная</a></li>
+					<li class="nav__item"><a class="nav__a nav__a--footer" href="">О нас</a></li>
+					<li class="nav__item"><a class="nav__a nav__a--footer" href="">Занятея</a></li>
+					<li class="nav__item"><a class="nav__a nav__a--footer" href="">Блог</a></li>
+					<li class="nav__item"><a class="nav__a nav__a--footer" href="">Страницы</a></li>
+					<li class="nav__item"><a class="nav__a nav__a--footer" href="">Контакты</a></li>
 				</ul>
 			</nav>
- 		</section>
+			<h2 class="house-footer__title">Ми в соцсетях</h2>
+			<ul class="messenger house-footer__messenger">
+				<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MFacebook.svg"></li>
+				<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MTelegram.svg"></li>
+				<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MTwitter.svg"></li>
+				<li class="messenger__item"><img class="cart__img" alt="" src="img\svg\MInstagram.svg"></li>
+			</ul>
  	</footer>
 </body>
 </html>

@@ -1,0 +1,58 @@
+// main: ../style.less
+.nav{
+	
+}
+.nav__list{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.nav__item{
+	margin-left: 20px;
+}
+
+.nav__a{
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 16px;
+	color: @mainColor;
+	font-family: @font;
+	color: #ffffff;
+}
+.nav__list--phone{
+	display: block;
+}
+@media (max-width: 767px) {
+	.nav--phone{
+		display: none;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.8);
+		padding: 20px;
+		z-index: 1;
+	}
+	.nav__list{
+		align-items: center;
+		position: relative;
+	}
+	.nav__item{
+		padding-top: 10px;
+	}
+}
+
+@media (min-width: 767px) {
+	.mein__icon{
+		display: none;
+	}
+	.nav__list--first{
+		margin-left: 0px;
+	}
+	.mein__title{
+		display: none;
+	}
+}
