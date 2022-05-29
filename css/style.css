@@ -33,7 +33,7 @@
   margin: 0px;
   font-weight: 400;
   font-size: 24px;
-  color: #5B483C;
+  color: #BD6024;
   font-family: Raleway;
   text-align: center;
 }
@@ -112,7 +112,7 @@
   font-family: Playfair Display;
   font-weight: 400;
   font-size: 24px;
-  color: #5B483C;
+  color: #BD6024;
 }
 .title__emphasis--big {
   font-size: 48px;
@@ -196,6 +196,10 @@
   font-weight: 400;
   font-size: 24px;
   color: #FFFFFF;
+  transition: 0.4s;
+}
+.button__text--ful:hover {
+  background: #BD6024;
 }
 .button__text--polyium {
   width: 240px;
@@ -204,11 +208,16 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  border: 2px solid #5B483C;
+  border: 2px solid #BD6024;
   font-family: Raleway;
   font-weight: 400;
   font-size: 24px;
-  color: #5B483C;
+  color: #BD6024;
+  transition: 0.4s;
+}
+.button__text--polyium:hover {
+  background: #BD6024;
+  color: #FFFFFF;
 }
 .join {
   display: flex;
@@ -230,7 +239,16 @@
     margin-left: auto;
   }
   .join__img {
-    width: 33.33%;
+    width: 45%;
+    max-width: 690px;
+    padding-right: 20px;
+    margin-right: auto;
+    z-index: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .join__img {
+    width: 33.3%;
     max-width: 690px;
     padding-right: 20px;
     margin-right: auto;
@@ -358,6 +376,7 @@
 .nav__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0px;
   padding: 0px;
   list-style-type: none;
@@ -395,8 +414,14 @@
   .nav__item {
     padding-top: 10px;
   }
+  .nav__a {
+    font-size: 36px;
+  }
 }
 @media (min-width: 767px) {
+  .nav__list--phone {
+    display: flex;
+  }
   .mein__icon {
     display: none;
   }
@@ -406,6 +431,13 @@
   .mein__title {
     display: none;
   }
+  .nav__a {
+    color: #000000;
+  }
+}
+.nav__a--footer {
+  font-size: 24px;
+  color: #ffffff;
 }
 .messenger {
   padding: 10px 20px 10px 20px;
