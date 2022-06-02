@@ -1,0 +1,47 @@
+// main: ../style.less
+.bread-crumbs{
+	background: #619B8A;
+	height: 270px;
+	padding-top: 80px;
+	margin-bottom: 150px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.bread-crumbs__title{
+	margin: 0px;
+	font-family: @font;
+	font-size: 48px;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+}
+.bread-crumbs__menu{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	padding: 0px;
+}
+.read-crumbs__item{
+	position: relative;
+	margin-left: 40px;
+	list-style-type:  none;
+	font-family: @font;
+	color: white;
+	&:first-child{
+		margin-left: 0px;
+		&::before{
+			content: none;
+		}
+	}
+	&::before{
+		content: " ";
+		left: -27px;
+		position: absolute;
+		background: url(../img/svg/crumbs.svg);
+		background-size: cover;
+		width: 17px;
+		height: 17px;
+	}
+}
