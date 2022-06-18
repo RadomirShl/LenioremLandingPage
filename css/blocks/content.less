@@ -1,0 +1,58 @@
+// main: ../style.less
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.content h3{
+	text-decoration: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: @font;
+	font-weight: 400;
+	font-size: 36px;
+	color: @mainColor;
+}
+.content p{
+ padding-left: 20px;
+ padding-right: 20px;
+}
+.content__wrapper-card h3{
+	text-decoration: none;
+	margin:0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: @font;
+	font-weight: 400;
+	font-size: 36px;
+	color: @mainColor;
+}
+.content__wrapper{
+	font-family: @font;
+	font-weight: 400;
+	font-size: 24px;
+	color: @mainColor;
+	width: 100%;
+	padding-right: 10px;
+}
+
+.content__price{
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.content__button{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+	.content__wrapper{
+		width: 48%;
+	}
+}
+@media (min-width: 1024px) {
+	.content__wrapper{
+		width: 66%;
+	}
+}

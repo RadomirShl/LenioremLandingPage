@@ -2,12 +2,21 @@
 .card{
 	width: 100%;
 	max-width: 440px;
-	box-shadow: 0px 0px 1px 0px #a5a5a5;
-	border: 1px solid #C4C4C4;
+	box-shadow: 0px 0px 2px 0px #a5a5a5;
+	//border: 1px solid #C4C4C4;
 	border-radius: 20px;
 	background-color: white;
 	margin-bottom: 40px;
-	
+	height: 100%;
+
+	font-family: @font;
+	font-weight: 400;
+	font-size: 24px;
+	color: @mainColor; 
+
+}
+.card__a{
+	text-decoration: none;
 }
 .card__img{
 	order: -1;
@@ -32,6 +41,10 @@
 	color: #000000;
 }
 .card__price{
+	font-family: @font;
+	font-weight: 300;
+	font-size: 24px;
+	color: @accent;
 	margin: 0px;
 }	
 .card__speciality{

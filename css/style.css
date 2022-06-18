@@ -313,11 +313,18 @@
 .card {
   width: 100%;
   max-width: 440px;
-  box-shadow: 0px 0px 1px 0px #a5a5a5;
-  border: 1px solid #C4C4C4;
+  box-shadow: 0px 0px 2px 0px #a5a5a5;
   border-radius: 20px;
   background-color: white;
   margin-bottom: 40px;
+  height: 100%;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+.card__a {
+  text-decoration: none;
 }
 .card__img {
   order: -1;
@@ -342,6 +349,10 @@
   color: #000000;
 }
 .card__price {
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 24px;
+  color: #BD6024;
   margin: 0px;
 }
 .card__speciality {
@@ -530,6 +541,12 @@
 .confidence__text {
   max-width: 920px;
 }
+.confidence__star {
+  height: 45px;
+}
+.confidence__wrapper {
+  width: 100%;
+}
 .navigation {
   display: flex;
 }
@@ -538,4 +555,60 @@
   font-weight: 400;
   font-size: 24px;
   color: #000000;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content h3 {
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+}
+.content p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.content__wrapper-card h3 {
+  text-decoration: none;
+  margin: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+}
+.content__wrapper {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  width: 100%;
+  padding-right: 10px;
+}
+.content__price {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.content__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .content__wrapper {
+    width: 48%;
+  }
+}
+@media (min-width: 1024px) {
+  .content__wrapper {
+    width: 66%;
+  }
 }
