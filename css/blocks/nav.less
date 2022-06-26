@@ -8,16 +8,19 @@
 	list-style-type: none;
 }
 .nav__item{
-	margin-left: 20px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
 }
 .nav__a{
 	text-decoration: none;
 	font-weight: 400;
 	font-size: 16px;
-	color: @mainColor;
 	font-family: @font;
 	color: #ffffff;
-	transition: 0.4s;
+	transition: 0.2s;
+	display: flex;
+	align-items: center;
 	&:hover{
 		color: #BD6024;
 	}
@@ -25,7 +28,13 @@
 .nav__list--phone{
 	display: block;
 }
-@media (max-width: 767px) {
+.nav__login-text{
+	font-family: inherit;
+}
+@media (max-width: 781px)  {
+	.nav__login-text{
+		display: none;
+	}
 	.nav--phone{
 		display: none;
 		position: fixed;
@@ -49,21 +58,50 @@
 	}
 }
 
-@media (min-width: 767px) {
+@media (min-width: 782px)  {
+	.nav__item{
+		position: relative;
+		&::after{
+			content: " ";
+			position: absolute;
+			bottom: -20px;
+			left: 0px;
+			width: -moz-available;
+			width: -webkit-fill-available;
+			width: fill-available;
+			height: 20px;
+	
+			transition: 0.2s;
+			background-color: rgba(123, 207, 182, 0.25);
+		}
+		&:hover{
+			&::after{
+				background-color: rgba(123, 207, 182, 0.5);
+			}
+		}
+	}
+	.nav__item--active{
+		&::after{
+			background-color: rgba(123, 207, 182, 0.75);
+		}
+		&:hover{
+			&::after{
+				background-color: rgba(123, 207, 182, 0.75);
+			}
+		}
+	}
 	.nav__list--phone{
 		display: flex;
 	}
 	.mein__icon{
 		display: none;
 	}
-	.nav__list--first{
-		margin-left: 0px;
-	}
-	.mein__title{
-		display: none;
-	}
 	.nav__a{
 		color: @mainColor;
+	}
+	.nav__login{
+		width: 20px;
+		height: 20px;
 	}
 }
 .nav__a--footer{

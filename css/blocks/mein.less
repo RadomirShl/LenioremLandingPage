@@ -1,12 +1,16 @@
 // main: ../style.less
 .mein{
-	height: 55px;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 0px 20px 0px 20px;
+}	
+.mein__logo{
+	width: 170px;
+	height: 47px;
 }
 .mein__icon{
+	margin: 0px 0px 0px 20px;
 	width: 43px;
 	height: 33px;
 }
@@ -16,15 +20,30 @@
 	color: @mainColor;
 	font-family: @font;
 }
-@media (min-width: 767px) {
+.mein__login{
+	margin: 0px 20px 0px 0px;
+}
+@media (min-width: 782px)  {
+	.mein__login{
+		margin: 0px;
+	}
 	.mein__icon{
 		display: none;
 	}
 }
 // Возможно изменить
-@media (max-width: 767px) {
+@media (max-width: 781px)  {
 	.mein{
 		background-color: white;
+	}
+	.mein__logo-wrapp{
+		background-color: #233D4D;
+		width: 100%;
+	}
+	.mein__logo{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.nav__a{
 		font-size: 36px;
