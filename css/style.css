@@ -118,12 +118,6 @@
   background-size: cover;
   position: relative;
 }
-.about-us__background {
-  width: 100%;
-  bottom: 0px;
-  right: 0px;
-  position: absolute;
-}
 .about-us__img {
   width: 100%;
 }
