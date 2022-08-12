@@ -19,6 +19,13 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/taviraj/v11/ahcZv8Cj3ylylTXzfO4.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
@@ -89,7 +96,7 @@
 }
 .title {
   margin: 0px;
-  font-family: Playfair Display;
+  font-family: Taviraj;
   font-weight: 400;
   font-size: 36px;
   color: #233D4D;
@@ -103,7 +110,7 @@
 .title__emphasis {
   margin: 0px;
   display: block;
-  font-family: Playfair Display;
+  font-family: Taviraj;
   font-weight: 400;
   font-size: 24px;
   color: #BD6024;
@@ -341,7 +348,7 @@
 .card__neme {
   margin: 0px;
   text-align: center;
-  font-family: Playfair Display;
+  font-family: Taviraj;
   font-weight: 400;
   font-size: 24px;
   color: #000000;
@@ -507,6 +514,7 @@
 .messenger {
   padding: 10px 20px 10px 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-family: Raleway;
   font-weight: 300;
@@ -651,6 +659,7 @@
   }
 }
 .modal {
+  display: none;
   position: fixed;
   z-index: 2;
   background: rgba(0, 0, 0, 0.3);
