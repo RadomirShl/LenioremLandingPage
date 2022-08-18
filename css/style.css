@@ -47,10 +47,18 @@
   width: 170px;
   height: 47px;
 }
-.mein__icon {
+.mein__button {
+  cursor: pointer;
   margin: 0px 0px 0px 20px;
-  width: 43px;
-  height: 33px;
+  width: 55px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0px;
+  stroke: #233D4D;
+  transition: 0.2s;
+}
+.mein__button:hover {
+  stroke: rgba(123, 207, 182, 0.5);
 }
 .mein__title {
   font-weight: 400;
@@ -65,7 +73,7 @@
   .mein__login {
     margin: 0px;
   }
-  .mein__icon {
+  .mein__button {
     display: none;
   }
 }
@@ -171,7 +179,7 @@
   margin-right: auto;
   max-width: 1400px;
 }
-@media (min-width: 781px) {
+@media (min-width: 782px) {
   .center--mein {
     padding-left: 20px;
     padding-right: 20px;
@@ -420,11 +428,11 @@
   list-style-type: none;
 }
 .nav__item {
-  padding: 10px;
   display: flex;
   align-items: center;
 }
 .nav__a {
+  padding: 10px;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
@@ -456,9 +464,13 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
-    z-index: 1;
+    z-index: 2;
+  }
+  .nav--phone--on {
+    display: block;
   }
   .nav__list {
+    width: 200px;
     align-items: center;
     position: relative;
   }
@@ -470,43 +482,52 @@
   }
 }
 @media (min-width: 782px) {
-  .nav__item {
+  .nav__a {
     position: relative;
   }
-  .nav__item::after {
+  .nav__a::after {
     content: " ";
     position: absolute;
-    bottom: -20px;
+    bottom: -10px;
     left: 0px;
     width: -moz-available;
     width: -webkit-fill-available;
     width: fill-available;
-    height: 20px;
+    height: 10px;
     transition: 0.2s;
     background-color: rgba(123, 207, 182, 0.25);
   }
-  .nav__item:hover::after {
+  .nav__a:hover::after {
     background-color: rgba(123, 207, 182, 0.5);
+    border-radius: 5px 5px 0px 0px;
+    height: 15px;
   }
-  .nav__item--active::after {
-    background-color: rgba(123, 207, 182, 0.75);
+  .nav__a {
+    color: #000000;
   }
-  .nav__item--active:hover::after {
+  .nav__a--active::after {
     background-color: rgba(123, 207, 182, 0.75);
+    height: 15px;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .nav__a--active:hover::after {
+    background-color: rgba(123, 207, 182, 0.75);
+    border-radius: 5px 5px 0px 0px;
+    height: 15px;
   }
   .nav__list--phone {
     display: flex;
   }
-  .mein__icon {
+  .mein__button {
     display: none;
-  }
-  .nav__a {
-    color: #000000;
   }
   .nav__login {
     width: 20px;
     height: 20px;
   }
+}
+.nav__a--active {
+  color: #BD6024;
 }
 .nav__a--footer {
   font-size: 24px;

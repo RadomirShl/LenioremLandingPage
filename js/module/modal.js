@@ -12,13 +12,14 @@ function modalWindow(buttonNeme){
       }, false); 
     }
   }
-
-  modal.addEventListener('click', function(e) {
-    if (!e.target.closest('.modal__container')) {
-      modal.classList.toggle('modal--not_activated');
-    }
-    console.log(e);
-    e.preventDefault();
-  }, false);
+  
+  if (modal != null) {
+    modal.addEventListener('click', function(e) {
+      if (!e.target.closest('.modal__container')) {
+        modal.classList.toggle('modal--not_activated');
+      }
+      e.preventDefault();
+    }, false);
+  }
 }
 export {modalWindow};

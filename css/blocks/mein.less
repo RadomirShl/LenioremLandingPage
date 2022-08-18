@@ -9,10 +9,19 @@
 	width: 170px;
 	height: 47px;
 }
-.mein__icon{
+.mein__button{
+	cursor: pointer;
 	margin: 0px 0px 0px 20px;
-	width: 43px;
-	height: 33px;
+	width: 55px;
+	height: 40px;
+	background-color:  rgba(0, 0, 0, 0.0);
+	border-width: 0px;
+	
+	stroke: #233D4D;
+	transition: 0.2s;
+	&:hover{
+		stroke:rgba(123, 207, 182, 0.5);
+	}
 }
 .mein__title{
 	font-weight: 400;
@@ -27,7 +36,7 @@
 	.mein__login{
 		margin: 0px;
 	}
-	.mein__icon{
+	.mein__button{
 		display: none;
 	}
 }

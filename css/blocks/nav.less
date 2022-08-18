@@ -8,11 +8,11 @@
 	list-style-type: none;
 }
 .nav__item{
-	padding: 10px;
 	display: flex;
 	align-items: center;
 }
 .nav__a{
+	padding: 10px;
 	text-decoration: none;
 	font-weight: 400;
 	font-size: 16px;
@@ -44,9 +44,13 @@
 		height: 100%;
 		background: rgba(0, 0, 0, 0.8);
 		padding: 20px;
-		z-index: 1;
+		z-index: 2;
+	}
+	.nav--phone--on{
+		display: block;
 	}
 	.nav__list{
+		width: 200px;
 		align-items: center;
 		position: relative;
 	}
@@ -57,19 +61,18 @@
 		font-size: 36px;
 	}
 }
-
 @media (min-width: 782px)  {
-	.nav__item{
+	.nav__a{
 		position: relative;
 		&::after{
 			content: " ";
 			position: absolute;
-			bottom: -20px;
+			bottom: -10px;
 			left: 0px;
 			width: -moz-available;
 			width: -webkit-fill-available;
 			width: fill-available;
-			height: 20px;
+			height: 10px;
 	
 			transition: 0.2s;
 			background-color: rgba(123, 207, 182, 0.25);
@@ -77,32 +80,41 @@
 		&:hover{
 			&::after{
 				background-color: rgba(123, 207, 182, 0.5);
+				border-radius: 5px 5px 0px 0px;
+				height: 15px;
 			}
 		}
 	}
-	.nav__item--active{
+	.nav__a{
+		color: @mainColor;
+	}
+	.nav__a--active{
 		&::after{
 			background-color: rgba(123, 207, 182, 0.75);
+			height: 15px;
+			border-radius: 5px 5px 0px 0px;
 		}
 		&:hover{
 			&::after{
 				background-color: rgba(123, 207, 182, 0.75);
+				border-radius: 5px 5px 0px 0px;
+				height: 15px;
 			}
 		}
 	}
 	.nav__list--phone{
 		display: flex;
 	}
-	.mein__icon{
+	.mein__button{
 		display: none;
-	}
-	.nav__a{
-		color: @mainColor;
 	}
 	.nav__login{
 		width: 20px;
 		height: 20px;
 	}
+}
+.nav__a--active{
+	color: #BD6024;
 }
 .nav__a--footer{
 	font-size: 24px;

@@ -2,7 +2,7 @@
 Получаит на вход класи для анимации*/
 function animItems (animClass){
   let animItems = document.querySelectorAll(animClass);
-// Скривает все елементи для анимации
+  // Скривает все елементи для анимации
   for(let i = 0; i < animItems.length; i++){
     animItems[i].classList.add('animation');  
   }
