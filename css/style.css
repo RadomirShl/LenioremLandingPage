@@ -325,7 +325,7 @@
   width: 100%;
   max-width: 440px;
   box-shadow: 0px 0px 2px 0px #a5a5a5;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: white;
   margin-bottom: 40px;
   font-family: Raleway;
@@ -335,6 +335,12 @@
 }
 .card__a {
   text-decoration: none;
+}
+.card__buy {
+  text-decoration: none;
+  font-family: Raleway;
+  color: #000000;
+  display: flex;
 }
 .card__img {
   order: -1;

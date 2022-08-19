@@ -26,6 +26,7 @@ function animItems (animClass){
         top: rect.top + window.scrollY
       };
     }
+    animSkrol();
   }
 }
 export {animItems};
