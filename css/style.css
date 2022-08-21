@@ -585,6 +585,13 @@
   margin-left: 40px;
   list-style-type: none;
   font-family: Raleway;
+  color: #ffffffb3;
+  transition: 0.2s;
+}
+.read-crumbs__item:hover {
+  color: #BD6024;
+}
+.read-crumbs__item:last-child {
   color: white;
 }
 .read-crumbs__item:first-child {
@@ -602,6 +609,10 @@
   width: 22px;
   height: 17px;
   height: 20px;
+}
+.read-crumbs__a {
+  color: inherit;
+  text-decoration: none;
 }
 .confidence {
   display: flex;
